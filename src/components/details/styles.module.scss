@@ -1,0 +1,230 @@
+.details_container {
+  h1 {
+    text-align: center;
+    margin-bottom: 10%;
+  }
+}
+.details_list {
+  margin-left: 20%;
+}
+.details_items {
+  position: relative;
+}
+.details_items_container {
+  position: relative;
+  right: 8.6rem;
+  display: flex;
+  align-items: flex-start;
+  width: max-content;
+  justify-content: space-between;
+  .details_items_title {
+    margin-top: 40px;
+    font-size: 20px;
+    background: #000;
+    color: rgba(255, 255, 255, 0.85);
+    white-space: nowrap;
+    font-weight: 700;
+
+    display: inline-block;
+    line-height: 1;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    align-items: center;
+    border-radius: 4px;
+  }
+  .details_items_desc_container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    bottom: 0.1rem;
+    left: 8px;
+    align-items: flex-start;
+    ul {
+      width: max-content;
+      margin: 0;
+
+      white-space: normal;
+      word-wrap: break-word; /* Автоматический перенос слов */
+      padding-left: 4rem;
+      li {
+        color: #777;
+        font-size: 16px;
+        white-space: normal;
+        word-break: break-all;
+        word-wrap: break-word; /* Автоматический перенос слов */
+        line-height: 1.55;
+      }
+    }
+  }
+  .details_items_desc_title {
+    padding-left: 52px;
+    color: #212121;
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 10px;
+  }
+}
+
+.details_line {
+  width: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  bottom: 0;
+  background-color: #616161;
+}
+
+.details_circle {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  bottom: 4px;
+  border-radius: 100px;
+  border: 2px solid #fff;
+  background-color: #212121;
+  z-index: 999;
+}
+
+.circle_container {
+  display: flex;
+  align-items: center;
+}
+
+.details_items_title_small_screen {
+  position: absolute;
+  font-size: 14px;
+  background: #000;
+  color: rgba(255, 255, 255, 0.85);
+  white-space: nowrap;
+  font-weight: 700;
+  top: 0.3%;
+  left: 20px;
+  display: inline-block;
+  line-height: 1;
+  padding: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 75px;
+  align-items: center;
+  border-radius: 4px;
+}
+@media screen and (max-width: 945px) {
+  .details_list {
+    margin-left: 0px;
+  }
+  .details_items {
+    max-width: 300px;
+  }
+  .details_items_container {
+    .details_items_desc_container {
+      .details_items_desc_title {
+        font-size: 20px;
+      }
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .details_items_container {
+    right: 0;
+  }
+  .details_line {
+    left: 138px;
+  }
+  .details_container {
+    width: 100%;
+  }
+  .details_items {
+    max-width: 0;
+  }
+  .details_list {
+    max-width: max-content;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .details_items_container {
+    .details_items_desc_container {
+      ul {
+        li {
+          flex-wrap: wrap;
+          width: 400px;
+          white-space: normal;
+          word-break: break-word;
+          word-wrap: break-word; /* Автоматический перенос слов */
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .details_items_container {
+    .details_items_desc_container {
+      .details_items_desc_title {
+        font-size: 18px;
+        white-space: normal;
+        word-break: break-word;
+        word-wrap: break-word; /* Автоматический перенос слов */
+        max-width: 450px;
+        margin-top: 30px;
+        margin-bottom: 0;
+      }
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .details_line {
+    left: 18px;
+  }
+  .details_items_container {
+    max-width: min-content;
+    .details_items_desc_container {
+      left: 16px;
+    }
+  }
+  .details_circle {
+    right: 7px;
+    top: 16px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .details_container {
+    h1 {
+      font-size: 22px;
+    }
+    .details_items_container {
+      .details_items_desc_container {
+        ul {
+          padding-left: 2rem;
+        }
+        .details_items_desc_title {
+          padding-left: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .details_items_container {
+    .details_items_desc_container {
+      ul {
+        li {
+          width: 300px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+body {
+  font-family: "Montserrat", serif;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header_container {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 5%;
+  h1 {
+    font-size: 37px;
+    font-weight: 500;
+    word-break: break-word;
+  }
+}
+.header_small_screen_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.5rem;
+  }
+}
+.header_content_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 165px;
+  background-color: #f5f5f5;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+  margin-top: 0.5rem;
+  padding-bottom: 30px;
+  border: 0px solid #999999;
+}
+.header_content_ul {
+  li {
+    font-size: 20px;
+    line-height: 1.55;
+
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    color: #000;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .header_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    h1 {
+      font-size: 32px;
+    }
+  }
+  .header_content_ul {
+    li {
+      font-size: 16px;
+      line-height: 1.55;
+
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      color: #000;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    h1 {
+      font-size: 22px;
+    }
+  }
+  .header_content_ul {
+    li {
+      font-size: 14px;
+      line-height: 1.55;
+
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      color: #000;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .header_content_container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    height: 100%;
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* На мобильных устройствах */
+  .header_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    h1 {
+      font-size: 22px;
+    }
+  }
+  .header_content_container {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .header_small_screen_container {
+    p {
+      font-size: 22px;
+    }
+  }
+}
+@media screen and (max-width: 315px) {
+  .header_small_screen_container {
+    p {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.tariffs_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 5%;
+  span {
+    text-align: center;
+  }
+}
+.tariffs_items {
+  margin-top: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 100%;
+}
+.tariffs_item_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  border: 0px solid #999999;
+  -webkit-flex: 1 0 200px;
+  -ms-flex: 1 0 200px;
+  -moz-flex: 1 0 200px;
+  flex: 1 0 200px;
+  margin: 10px;
+
+  p {
+    font-size: 20px;
+    font-weight: 700;
+
+    mark {
+      padding: 0.2rem 0.4rem;
+      display: inline-block;
+      line-height: 1;
+      border-radius: 4px;
+    }
+  }
+  .tariffs_item_price {
+    margin: 0;
+    font-size: 22px;
+  }
+  .tariffs_item_description {
+    min-height: 75px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+  }
+  button {
+    cursor: pointer;
+    color: #ffff00;
+    background-color: #333333;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 14px;
+    min-height: 46px;
+    font-weight: 700;
+    &:hover {
+      background-color: #4c4c4c;
+    }
+  }
+}
+
+.tariffs_item_price_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media screen and (max-width: 910px) {
+  .tariffs_item_container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .tariffs_items {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .tariffs_items {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .tariffs_items {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    // margin-right: 5%;
+  }
+  .tariffs_item_container {
+    margin: 0;
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tariffs_item_container {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .tariffs_item_container {
+    max-width: 300px;
+  }
+}
