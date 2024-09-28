@@ -1,4 +1,3 @@
-import { useMediaQuery } from "@uidotdev/usehooks";
 import styles from "./styles.module.scss";
 type TariffsItemProps = {
   tariffName: string;
@@ -12,7 +11,6 @@ const TariffsItem = ({
   tariffPrice1,
   tariffPrice2,
 }: TariffsItemProps) => {
- 
   return (
     <div className={styles.tariffs_item_container}>
       <p>
@@ -23,7 +21,9 @@ const TariffsItem = ({
         <p className={styles.tariffs_item_price}>{tariffPrice2}</p>
       </div>
       <p className={styles.tariffs_item_description}>{tariffDescription}</p>
-      <button>Записаться</button>
+      <a href="https://t.me/Mason_tradeRud">
+        <button>Записаться</button>
+      </a>
     </div>
   );
 };

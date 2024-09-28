@@ -7,7 +7,7 @@ type ModuleItemProps = {
 const ModuleItem = ({ mainTitle, description }: ModuleItemProps) => {
   const isLargeDevice = useMediaQuery("only screen and (max-width : 1300px)");
   const isMediumDevice = useMediaQuery("only screen and (max-width : 1100px)");
-  const isSmallDevice = useMediaQuery("only screen and (max-width : 990px)");
+
   return (
     <div className={styles.modules_item_container}>
       <span

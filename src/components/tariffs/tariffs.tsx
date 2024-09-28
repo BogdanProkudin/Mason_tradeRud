@@ -1,4 +1,3 @@
-import { useMediaQuery } from "@uidotdev/usehooks";
 import styles from "./styles.module.scss";
 import TariffsItem from "./tariffsItem";
 const Tariffs = () => {

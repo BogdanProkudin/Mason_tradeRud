@@ -1,4 +1,3 @@
-import ModuleItem from "../modules/moduleItem";
 import DetailsItem from "./detaitlsItem";
 import styles from "./styles.module.scss";
 const Details = () => {
