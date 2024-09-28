@@ -1,4 +1,5 @@
 {
+  "homepage": "http://BogdanProkudin.github.io/Mason_tradeRud",
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
@@ -6,6 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "predeploy":"npm run duild",
+    "deploy":"gh-pages -d build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
